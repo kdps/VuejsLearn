@@ -13,6 +13,19 @@ var App = new Vue({
 
 v-bind:{attributes}="{Globally binding data}" : Bind to element
 
+v-bind:class="{className: bool[binding data] }"
+
+v-bind:class="{classObject}"
+
+```
+data: {
+  classObject: {
+    active: true,
+    'text-danger': false
+  }
+}
+```
+
 v-if="{bool}" : Check that bool is true
 
 v-for="{var} in {array}" : do loop in array
@@ -25,9 +38,13 @@ v-model="{Globally binding data}" : Update data when bind is updated
 
 el : Element Selector (... #id, .class)
 
+watch : Set Watch Instance (Watch is call method when data is changed)
+
 data : Element Data
 
  -> message : Globally binding data
+
+computed : Define multiple functions in this properties, and it has getter and setter method
 
 methods : Define functions
 
@@ -76,3 +93,13 @@ var app7 = new Vue({
   }
 })
 ```
+
+# Instance
+
+### Usage
+
+```
+{Vue Object}.$watch("domain", function(){
+});
+```
+
