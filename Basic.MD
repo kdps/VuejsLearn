@@ -1,6 +1,6 @@
-### Attributes And Constructor Variables
+# Attributes And Constructor Variables
 
-# Element Properties
+### Element Properties
 
 v-bind:{attributes}="{Globally binding data}" : Bind to element
 
@@ -12,7 +12,7 @@ v-on:{eventType}="{method}" : do event when bind event
 
 v-model="{Globally binding data}" : Update data when bind is updated
 
-# Constructor Parameter
+### Constructor Parameter
 
 el : Element Selector (... #id, .class)
 
