@@ -43,11 +43,57 @@ data: {
 }
 ```
 
+##### If
+
 v-if="{bool}" : Check that bool is true
+
+HTML
+
+```
+{{#if ok}}
+  <h1>Yes</h1>
+{{/if}}
+```
+
+ELEMENT
+
+```
+<div v-if="Math.random() > 0.5">
+  You can see me
+</div>
+<div v-else-if="type === 'B'">
+  Other case
+</div>
+<div v-else>
+  It is not visible
+</div>
+```
+
+##### For
 
 v-for="{var} in {array}" : do loop in array
 
+##### On
+
 v-on:{eventType}="{method}" : do event when bind event
+
+Other function
+
+v-on:click.stop : Stop propagation
+
+v-on:submit.prevent : Prevent Default
+
+v-on:click.capture : Add Event Listener
+
+v-on:click.self : Self Trigger
+
+v-on:click.onc : Self Trigger but once
+
+v-on:keyup.13 / v-on:keyup.enter / @keyup.enter : When key press (Asc 13)
+
+
+
+##### Model
 
 v-model="{Globally binding data}" : Update data when bind is updated
 
