@@ -18,6 +18,7 @@ data : Element Data
 
 methods : Define functions
 
+```
 methods: {
 
     reverseMessage: function () {
@@ -27,3 +28,4 @@ methods: {
     }
     
 }
+```
