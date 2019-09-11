@@ -57,7 +57,7 @@ Vue.component('domain', {
 
 template: "{Template Code}" : Set HTML Template
 
-props : ["{Properties}"] : Set Properties
+props : ["{Properties}"] : Set Properties In Data Of Binding Object
 
 ```
 Vue.component('todo-item', {
