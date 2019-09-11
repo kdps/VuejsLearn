@@ -15,7 +15,7 @@ v-bind:{attributes}="{Globally binding data}" : Bind to element
 
 v-bind:class="{className: bool[binding data] }"
 
-v-bind:class="{classObject}"
+v-bind:class="{classString, Array}"
 
 ```
 data: {
@@ -25,6 +25,8 @@ data: {
   }
 }
 ```
+
+v-bind:style="{ attributes: Properties[binding data] }"
 
 v-if="{bool}" : Check that bool is true
 
