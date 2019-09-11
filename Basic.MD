@@ -13,6 +13,8 @@ var App = new Vue({
 
 v-bind:{attributes}="{Globally binding data}" : Bind to element
 
+##### Class
+
 v-bind:class="{className: bool[binding data] }"
 
 v-bind:class="{classString, Array}"
@@ -26,7 +28,20 @@ data: {
 }
 ```
 
+##### Style
+
 v-bind:style="{ attributes: Properties[binding data] }"
+
+v-bind:style="styleObject"
+
+```
+data: {
+  styleObject: {
+    color: 'red',
+    fontSize: '13px'
+  }
+}
+```
 
 v-if="{bool}" : Check that bool is true
 
