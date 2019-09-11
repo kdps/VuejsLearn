@@ -1,5 +1,14 @@
 # Attributes And Constructor Variables
 
+### Usage
+
+```
+var App = new Vue({
+  el: "",
+  ...
+});
+```
+
 ### Element Properties
 
 v-bind:{attributes}="{Globally binding data}" : Bind to element
@@ -33,3 +42,9 @@ methods: {
     
 }
 ```
+
+# Component
+
+Vue.component('todo-item', {
+  template: '<li>할일 항목 하나입니다.</li>'
+})
